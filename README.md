@@ -56,19 +56,14 @@ Python · pandas · NumPy · Matplotlib · seaborn · scikit-learn · XGBoost ·
 ## How to run
 
 ```bash
-# 1. Clone the repo
-git clone https://github.com/<your-username>/food-delivery-time-prediction.git
-cd food-delivery-time-prediction
-
-# 2. (Optional) create a virtual environment
-python -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
-
-# 3. Install dependencies
+# 1. Install dependencies
 pip install -r requirements.txt
 
-# 4. Launch the notebook
-jupyter notebook Food_Delivery_Time_Prediction.ipynb
+# 2. Launch the app
+Food_app.py
+
+# 3. Also can open from Deployed app
+link: ""
 ```
 
 Then update the dataset path in the first load cell to point at your local CSV.
@@ -81,9 +76,7 @@ Then update the dataset path in the first load cell to point at your local CSV.
 food-delivery-time-prediction/
 ├── README.md
 ├── requirements.txt
-├── .gitignore
 ├── Food_Delivery_Time_Prediction.ipynb   # the full, documented notebook
 ├── food_delivery.csv                      # dataset (or link it in the README)
-├── xgb_best.pkl                           # saved best model
-└── standard_scaler.pkl                    # saved scaler
+├── pipe.pkl                              # saved pipeline model
 ```
