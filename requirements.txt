@@ -2,3 +2,11 @@ streamlit
 joblib
 pandas
 gdown
+streamlit
+numpy
+scikit-learn
+xgboost
+matplotlib
+seaborn
+geopy
+jupyter
