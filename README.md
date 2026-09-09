@@ -11,12 +11,12 @@ raw messy data to a saved model ready for inference.
 
 Four models were trained and compared. XGBoost (with tuned hyperparameters) came out on top.
 
-| Model | Test R² | Test RMSE (min) | Train R² | Notes |
+| Model | Test R² | Train R² | Notes |
 |---|---|---|---|---|
-| Linear Regression | 0.57 | 6.21 | 0.58 | Baseline — relationships aren't linear |
-| Decision Tree | 0.67 | 5.46 | 1.00 | Overfits (memorises the training set) |
-| Random Forest | 0.82 | 4.03 | 0.97 | Big gain — averaging tames overfitting |
-| **XGBoost (tuned)** | **0.83** | **3.91** | 0.85 | Best score *and* healthiest train/test gap |
+| Linear Regression | 0.57 | 0.58 | Baseline — relationships aren't linear |
+| Decision Tree | 0.67 | 1.00 | Overfits (memorises the training set) |
+| Random Forest | 0.82 | 0.97 | Big gain — averaging tames overfitting |
+| **XGBoost (tuned)** | **0.83** | 0.85 | Best score *and* healthiest train/test gap |
 
 *RMSE is in minutes, so the final model is off by roughly 4 minutes on average.*
 
