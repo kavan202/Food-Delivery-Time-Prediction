@@ -12,7 +12,7 @@ raw messy data to a saved model ready for inference.
 Four models were trained and compared. XGBoost (with tuned hyperparameters) came out on top.
 
 | Model | Test R² | Train R² | Notes |
-|---|---|---|---|---|
+|---|---|---|---|
 | Linear Regression | 0.57 | 0.58 | Baseline — relationships aren't linear |
 | Decision Tree | 0.67 | 1.00 | Overfits (memorises the training set) |
 | Random Forest | 0.82 | 0.97 | Big gain — averaging tames overfitting |
@@ -63,7 +63,7 @@ pip install -r requirements.txt
 Food_app.py
 
 # 3. Also can open from Deployed app
-link: ""
+link: "https://food-delivery-time-prediction-gqkdhq2qw9th32knwscjfm.streamlit.app/"
 ```
 
 Then update the dataset path in the first load cell to point at your local CSV.
